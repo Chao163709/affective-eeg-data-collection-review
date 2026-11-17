@@ -24,6 +24,9 @@ Code and documentary coding records for **What Can an Affective EEG Corpus Suppo
 
 Repository: https://github.com/Chao163709/affective-eeg-data-collection-review. Use an exact commit identifier when citing or reproducing this release.
 
+
+The register status columns follow the revised 2026-11-14 workbook. `register/provisional_fields.csv` lists the nine candidate fields; their status is distinct from the two frozen pre-adjudication coding records. The 2026-11-17 documentary check did not promote any of these fields to human-confirmed status.
+
 ## Quick verification without restricted data
 
 Python 3.12 was used for the rating analyses. Install `requirements.txt`, then run:
