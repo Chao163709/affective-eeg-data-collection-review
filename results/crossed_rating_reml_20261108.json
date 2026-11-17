@@ -1,0 +1,213 @@
+{
+  "method": "crossed random-intercept Gaussian REML; profiled intercept/residual scale",
+  "component_order": [
+    "participant",
+    "stimulus",
+    "residual (interaction plus measurement error)"
+  ],
+  "uncertainty": "point-estimate sensitivity only; no confidence intervals",
+  "assumptions": "independent random intercepts, common residual variance, ignorable observed-cell pattern",
+  "input_sha256": {
+    "deap_subj32_8d65c6_y.npy": "6e0f505365c86f830ded71a13c1266a812fa9884156c4ec5992202304d17d48b",
+    "mahnob_meta.csv": "8744a914ca49a1080ce20dabdc23e5ecdaf81f59276463280e6395546e526a84",
+    "dens_ratings.csv": "aae1c2cc242b964987a3fbde53296f43af9f6400e84dd6ab960914109f73d31c",
+    "met_ratings.tsv": "7847966b3fd6ad56a87c81bca323cb5da6e2cfad0f9ca6c815c2d9decb5100ee",
+    "faced_ratings_long.csv": "ed9cb66aa6497173b1810f07694e67a5a0d3601a5c5df1b0e4b01c78af75aa9a"
+  },
+  "numpy_version": "2.2.5",
+  "scipy_version": "1.15.3",
+  "loader_sha256": "8306bca9c0996b9dc12a10f751d10f41ea9c615bef3576dad5590ece6471ffc1",
+  "script_sha256": "b68e494590244e29110c1f05a1550e9a7bf43a8eaaee11e28319c812963b95cb",
+  "corpora": {
+    "DEAP": {
+      "valence": {
+        "components": [
+          0.1663193828332166,
+          2.2306260121044383,
+          2.202566768455858
+        ],
+        "shares": [
+          0.036160222415958655,
+          0.4849701300623773,
+          0.4788696475216641
+        ],
+        "mean": 5.254312510415928,
+        "restricted_profile_objective": 1197.058880076243,
+        "boundary_model": "(0, 1)",
+        "converged": true,
+        "one_way_share": 0.48438743350788693,
+        "n_observations": 1280
+      },
+      "arousal": {
+        "components": [
+          0.4149844343325736,
+          0.5981450142078255,
+          3.096440322107577
+        ],
+        "shares": [
+          0.10098001919727499,
+          0.14554930262529964,
+          0.7534706781774253
+        ],
+        "mean": 5.156710941996427,
+        "restricted_profile_objective": 1586.9919786411567,
+        "boundary_model": "(0, 1)",
+        "converged": true,
+        "one_way_share": 0.1428444607865014,
+        "n_observations": 1280
+      }
+    },
+    "MAHNOB-HCI": {
+      "valence": {
+        "components": [
+          0.22474473418094834,
+          3.6204705094131433,
+          1.88812641066148
+        ],
+        "shares": [
+          0.03919960604722232,
+          0.6314764979557514,
+          0.32932389599702616
+        ],
+        "mean": 4.629608214041777,
+        "restricted_profile_objective": 446.6460779092054,
+        "boundary_model": "(0, 1)",
+        "converged": true,
+        "one_way_share": 0.6317336686991138,
+        "n_observations": 527
+      },
+      "arousal": {
+        "components": [
+          0.7266236589785465,
+          1.8399370421156196,
+          2.6704919456014045
+        ],
+        "shares": [
+          0.13874667833194787,
+          0.35133063695217326,
+          0.5099226847158789
+        ],
+        "mean": 4.54118294279162,
+        "restricted_profile_objective": 626.8503678375895,
+        "boundary_model": "(0, 1)",
+        "converged": true,
+        "one_way_share": 0.3474894496439791,
+        "n_observations": 527
+      }
+    },
+    "DENS": {
+      "valence": {
+        "components": [
+          0.2709407502247622,
+          6.258656692914492,
+          1.89233425265539
+        ],
+        "shares": [
+          0.032170855809724994,
+          0.743137906953063,
+          0.22469123723721204
+        ],
+        "mean": 4.415343822059108,
+        "restricted_profile_objective": 344.6462740794101,
+        "boundary_model": "(0, 1)",
+        "converged": true,
+        "one_way_share": 0.7132502009009176,
+        "n_observations": 367
+      },
+      "arousal": {
+        "components": [
+          0.7832337943120146,
+          1.6763290849127932,
+          3.7001094959027863
+        ],
+        "shares": [
+          0.12715510608562042,
+          0.27214581926170534,
+          0.6006990746526744
+        ],
+        "mean": 5.529900401161351,
+        "restricted_profile_objective": 563.4756924010974,
+        "boundary_model": "(0, 1)",
+        "converged": true,
+        "one_way_share": 0.2865380287944216,
+        "n_observations": 367
+      }
+    },
+    "MET": {
+      "valence": {
+        "components": [
+          0.17382266994109488,
+          2.289347828685603,
+          2.249203677083322
+        ],
+        "shares": [
+          0.036886432074317355,
+          0.4858162241203319,
+          0.4772973438053508
+        ],
+        "mean": 5.937499999999999,
+        "restricted_profile_objective": 405.3308006523797,
+        "boundary_model": "(0, 1)",
+        "converged": true,
+        "one_way_share": 0.48486628622580286,
+        "n_observations": 400
+      },
+      "arousal": {
+        "components": [
+          0.273698204166967,
+          4.580278151446747,
+          2.0181439787756905
+        ],
+        "shares": [
+          0.03982732997228363,
+          0.6665014476720029,
+          0.29367122235571336
+        ],
+        "mean": 4.725000000000038,
+        "restricted_profile_objective": 383.9873617588824,
+        "boundary_model": "(0, 1)",
+        "converged": true,
+        "one_way_share": 0.6658359568798307,
+        "n_observations": 400
+      }
+    },
+    "FACED": {
+      "valence": {
+        "components": [
+          0.3511027965497912,
+          1.718257800484505,
+          2.0976715664335015
+        ],
+        "shares": [
+          0.08425728018801851,
+          0.41234570146791794,
+          0.5033970183440634
+        ],
+        "mean": 3.079183740930301,
+        "restricted_profile_objective": 2666.1068337113065,
+        "boundary_model": "(0, 1)",
+        "converged": true,
+        "one_way_share": 0.4116056102009315,
+        "n_observations": 3158
+      },
+      "arousal": {
+        "components": [
+          0.7815627144141357,
+          0.9537628170329516,
+          2.4336395029706703
+        ],
+        "shares": [
+          0.1874716405538982,
+          0.2287768808706632,
+          0.5837514785754386
+        ],
+        "mean": 3.519451015626956,
+        "restricted_profile_objective": 3180.306045955259,
+        "boundary_model": "(0, 1)",
+        "converged": true,
+        "one_way_share": 0.2268939745105663,
+        "n_observations": 3158
+      }
+    }
+  }
+}

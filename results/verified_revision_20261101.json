@@ -1,0 +1,660 @@
+{
+  "seed": 20261101,
+  "bootstrap": 2000,
+  "method": "unequal-group one-way moments; descriptive percentile intervals",
+  "calibration": "not established for the unbalanced observed designs",
+  "corpora": {
+    "DEAP": {
+      "n_subjects": 32,
+      "n_stimuli": 40,
+      "n_cells": [
+        1280,
+        1280
+      ],
+      "n_complete": 32,
+      "dimensions": {
+        "valence": {
+          "point": 0.48438743350788693,
+          "mean_count": 32.0,
+          "effective_count": 32.0,
+          "ci": {
+            "stimulus": [
+              0.39767623124222196,
+              0.5483531189799105
+            ],
+            "participant": [
+              0.41874909606232985,
+              0.5847840556521263
+            ],
+            "crossed": [
+              0.3802533348430932,
+              0.6085930192467901
+            ]
+          },
+          "binary": {
+            "threshold": 5.039999961853027,
+            "rule": "y > full-corpus median, held fixed during resampling",
+            "aggregation": "micro over observed participant-stimulus cells",
+            "stimulus_baseline": 0.8,
+            "training_majority_baseline": 0.45,
+            "class_balance_reference": 0.5015625,
+            "stimulus_ci": [
+              0.76484375,
+              0.8343945312499998
+            ],
+            "excess_ci": [
+              0.18281250000000004,
+              0.3734375
+            ]
+          },
+          "majority_strength": {
+            "fixed": 0.7890625,
+            "median": 0.8
+          }
+        },
+        "arousal": {
+          "point": 0.1428444607865014,
+          "mean_count": 32.0,
+          "effective_count": 32.0,
+          "ci": {
+            "stimulus": [
+              0.08855099330405813,
+              0.18865703377382456
+            ],
+            "participant": [
+              0.10096760523949817,
+              0.2566138933975273
+            ],
+            "crossed": [
+              0.07934655384440312,
+              0.27186421586956305
+            ]
+          },
+          "binary": {
+            "threshold": 5.229999780654907,
+            "rule": "y > full-corpus median, held fixed during resampling",
+            "aggregation": "micro over observed participant-stimulus cells",
+            "stimulus_baseline": 0.65625,
+            "training_majority_baseline": 0.3640625,
+            "class_balance_reference": 0.5,
+            "stimulus_ci": [
+              0.61015625,
+              0.69453125
+            ],
+            "excess_ci": [
+              0.07500000000000007,
+              0.30468750000000006
+            ]
+          },
+          "majority_strength": {
+            "fixed": 0.67890625,
+            "median": 0.66875
+          }
+        }
+      },
+      "contrast": {
+        "point": 0.34154297272138556,
+        "frames": {
+          "stimulus": {
+            "ci": [
+              0.23808614963870953,
+              0.4389721985328287
+            ]
+          },
+          "participant": {
+            "ci": [
+              0.2377718804260894,
+              0.4214502250253191
+            ]
+          },
+          "crossed": {
+            "ci": [
+              0.1820340763216175,
+              0.47358875903706105
+            ]
+          }
+        }
+      },
+      "crossed_complete_block": {
+        "n_subjects": 32,
+        "n_stimuli": 40,
+        "dimensions": {
+          "valence": {
+            "point": [
+              0.03616019564951459,
+              0.484970078860503,
+              0.47886972548998236
+            ],
+            "ci_participant": [
+              0.014260282623750082,
+              0.05996318929080498
+            ]
+          },
+          "arousal": {
+            "point": [
+              0.10098000122101784,
+              0.14554932226763828,
+              0.7534706765113437
+            ],
+            "ci_participant": [
+              0.04192521668823523,
+              0.15703818207680284
+            ]
+          }
+        }
+      }
+    },
+    "MAHNOB-HCI": {
+      "n_subjects": 27,
+      "n_stimuli": 20,
+      "n_cells": [
+        527,
+        527
+      ],
+      "n_complete": 24,
+      "dimensions": {
+        "valence": {
+          "point": 0.6317336686991138,
+          "mean_count": 26.35,
+          "effective_count": 26.348946369719364,
+          "ci": {
+            "stimulus": [
+              0.4799968539198082,
+              0.7235172928302468
+            ],
+            "participant": [
+              0.5741572608340445,
+              0.7170422356740728
+            ],
+            "crossed": [
+              0.4764538032095317,
+              0.7550568652156016
+            ]
+          },
+          "binary": {
+            "threshold": 5.0,
+            "rule": "y > full-corpus median, held fixed during resampling",
+            "aggregation": "micro over observed participant-stimulus cells",
+            "stimulus_baseline": 0.889943074003795,
+            "training_majority_baseline": 0.6413662239089184,
+            "class_balance_reference": 0.6413662239089184,
+            "stimulus_ci": [
+              0.8502830820892532,
+              0.9296611315935671
+            ],
+            "excess_ci": [
+              0.10344333091580414,
+              0.38418801361068305
+            ]
+          },
+          "majority_strength": {
+            "fixed": 0.8895384615384616,
+            "median": 0.8895384615384616
+          }
+        },
+        "arousal": {
+          "point": 0.3474894496439791,
+          "mean_count": 26.35,
+          "effective_count": 26.348946369719364,
+          "ci": {
+            "stimulus": [
+              0.16300556762770566,
+              0.4715990997002776
+            ],
+            "participant": [
+              0.28102750853704245,
+              0.4615340281564245
+            ],
+            "crossed": [
+              0.16762077195809735,
+              0.5282093388498832
+            ]
+          },
+          "binary": {
+            "threshold": 5.0,
+            "rule": "y > full-corpus median, held fixed during resampling",
+            "aggregation": "micro over observed participant-stimulus cells",
+            "stimulus_baseline": 0.6603415559772297,
+            "training_majority_baseline": 0.6166982922201139,
+            "class_balance_reference": 0.6166982922201139,
+            "stimulus_ci": [
+              0.5433786831835595,
+              0.7571157495256167
+            ],
+            "excess_ci": [
+              -0.05660644862146448,
+              0.1510588595122451
+            ]
+          },
+          "majority_strength": {
+            "fixed": 0.7120000000000001,
+            "median": 0.7120000000000001
+          }
+        }
+      },
+      "contrast": {
+        "point": 0.28424421905513475,
+        "frames": {
+          "stimulus": {
+            "ci": [
+              0.08069852647218632,
+              0.49158666549803726
+            ]
+          },
+          "participant": {
+            "ci": [
+              0.17135681230873556,
+              0.3844743477323144
+            ]
+          },
+          "crossed": {
+            "ci": [
+              0.019270527505366664,
+              0.5144841231688477
+            ]
+          }
+        }
+      },
+      "crossed_complete_block": {
+        "n_subjects": 24,
+        "n_stimuli": 20,
+        "dimensions": {
+          "valence": {
+            "point": [
+              0.0439689086062285,
+              0.6654439531369026,
+              0.29058713825686894
+            ],
+            "ci_participant": [
+              0.007821464893152268,
+              0.07873608787139307
+            ]
+          },
+          "arousal": {
+            "point": [
+              0.1436997528512336,
+              0.35864941617266366,
+              0.49765083097610274
+            ],
+            "ci_participant": [
+              0.060527917713222884,
+              0.22128848808940815
+            ]
+          }
+        }
+      }
+    },
+    "DENS": {
+      "n_subjects": 34,
+      "n_stimuli": 20,
+      "n_cells": [
+        367,
+        367
+      ],
+      "n_complete": 0,
+      "dimensions": {
+        "valence": {
+          "point": 0.7132502009009176,
+          "mean_count": 18.35,
+          "effective_count": 18.157751326545245,
+          "ci": {
+            "stimulus": [
+              0.5548040868285126,
+              0.8117152956303635
+            ],
+            "participant": [
+              0.6667924859485015,
+              0.7849200122828098
+            ],
+            "crossed": [
+              0.5543457604946117,
+              0.8378550349522487
+            ]
+          },
+          "binary": {
+            "threshold": 3.63,
+            "rule": "y > full-corpus median, held fixed during resampling",
+            "aggregation": "micro over observed participant-stimulus cells",
+            "stimulus_baseline": 0.896457765667575,
+            "training_majority_baseline": 0.40054495912806537,
+            "class_balance_reference": 0.5013623978201636,
+            "stimulus_ci": [
+              0.8534417088547139,
+              0.9410029498525073
+            ],
+            "excess_ci": [
+              0.1769570730273071,
+              0.5159009541802941
+            ]
+          },
+          "majority_strength": {
+            "fixed": 0.9196257615998663,
+            "median": 0.9097013802169274
+          }
+        },
+        "arousal": {
+          "point": 0.2865380287944216,
+          "mean_count": 18.35,
+          "effective_count": 18.157751326545245,
+          "ci": {
+            "stimulus": [
+              0.12872905073254173,
+              0.3894340016344481
+            ],
+            "participant": [
+              0.22814210977297433,
+              0.418911164405977
+            ],
+            "crossed": [
+              0.1308457635620567,
+              0.4772963161639567
+            ]
+          },
+          "binary": {
+            "threshold": 6.02,
+            "rule": "y > full-corpus median, held fixed during resampling",
+            "aggregation": "micro over observed participant-stimulus cells",
+            "stimulus_baseline": 0.6866485013623979,
+            "training_majority_baseline": 0.48501362397820164,
+            "class_balance_reference": 0.5095367847411444,
+            "stimulus_ci": [
+              0.5761758382602225,
+              0.7768605887074033
+            ],
+            "excess_ci": [
+              0.010148477157360437,
+              0.3694520308123249
+            ]
+          },
+          "majority_strength": {
+            "fixed": 0.7397596801838625,
+            "median": 0.7254660091065565
+          }
+        }
+      },
+      "contrast": {
+        "point": 0.42671217210649603,
+        "frames": {
+          "stimulus": {
+            "ci": [
+              0.22727192865300286,
+              0.6247486624946365
+            ]
+          },
+          "participant": {
+            "ci": [
+              0.2819202083475886,
+              0.5170837050717417
+            ]
+          },
+          "crossed": {
+            "ci": [
+              0.16402018570687876,
+              0.6422369541601601
+            ]
+          }
+        }
+      }
+    },
+    "MET": {
+      "n_subjects": 20,
+      "n_stimuli": 20,
+      "n_cells": [
+        400,
+        400
+      ],
+      "n_complete": 20,
+      "dimensions": {
+        "valence": {
+          "point": 0.48486628622580286,
+          "mean_count": 20.0,
+          "effective_count": 20.0,
+          "ci": {
+            "stimulus": [
+              0.3365744451599963,
+              0.5693834289394244
+            ],
+            "participant": [
+              0.4101529153304003,
+              0.6100375363673007
+            ],
+            "crossed": [
+              0.3211151827689359,
+              0.6405409638197359
+            ]
+          },
+          "binary": {
+            "threshold": 6.0,
+            "rule": "y > full-corpus median, held fixed during resampling",
+            "aggregation": "micro over observed participant-stimulus cells",
+            "stimulus_baseline": 0.7925,
+            "training_majority_baseline": 0.5725,
+            "class_balance_reference": 0.5725,
+            "stimulus_ci": [
+              0.73,
+              0.85
+            ],
+            "excess_ci": [
+              0.10499999999999998,
+              0.4
+            ]
+          },
+          "majority_strength": {
+            "fixed": 0.8025,
+            "median": 0.7925
+          }
+        },
+        "arousal": {
+          "point": 0.6658359568798307,
+          "mean_count": 20.0,
+          "effective_count": 20.0,
+          "ci": {
+            "stimulus": [
+              0.5285881841439473,
+              0.7490781185290831
+            ],
+            "participant": [
+              0.5885608729939239,
+              0.7694095602009564
+            ],
+            "crossed": [
+              0.5023782744137743,
+              0.792027508480024
+            ]
+          },
+          "binary": {
+            "threshold": 5.0,
+            "rule": "y > full-corpus median, held fixed during resampling",
+            "aggregation": "micro over observed participant-stimulus cells",
+            "stimulus_baseline": 0.8375,
+            "training_majority_baseline": 0.5775,
+            "class_balance_reference": 0.5775,
+            "stimulus_ci": [
+              0.7225,
+              0.9175
+            ],
+            "excess_ci": [
+              0.07500000000000007,
+              0.415
+            ]
+          },
+          "majority_strength": {
+            "fixed": 0.8625,
+            "median": 0.8625
+          }
+        }
+      },
+      "contrast": {
+        "point": -0.1809696706540278,
+        "frames": {
+          "stimulus": {
+            "ci": [
+              -0.3505942737716294,
+              -0.030969890923644043
+            ]
+          },
+          "participant": {
+            "ci": [
+              -0.26326605107039575,
+              -0.08069996547333577
+            ]
+          },
+          "crossed": {
+            "ci": [
+              -0.3581384358172747,
+              0.02477400388547966
+            ]
+          }
+        }
+      },
+      "crossed_complete_block": {
+        "n_subjects": 20,
+        "n_stimuli": 20,
+        "dimensions": {
+          "valence": {
+            "point": [
+              0.03688643240598,
+              0.48581635847146143,
+              0.4772972091225585
+            ],
+            "ci_participant": [
+              0.0,
+              0.08254124178611434
+            ]
+          },
+          "arousal": {
+            "point": [
+              0.03982731620603548,
+              0.6665013997303326,
+              0.29367128406363185
+            ],
+            "ci_participant": [
+              0.008934219018376011,
+              0.06826907103100094
+            ]
+          }
+        }
+      }
+    },
+    "FACED": {
+      "n_subjects": 118,
+      "n_stimuli": 28,
+      "n_cells": [
+        3158,
+        3158
+      ],
+      "n_complete": 109,
+      "dimensions": {
+        "valence": {
+          "point": 0.4116056102009315,
+          "mean_count": 112.78571428571429,
+          "effective_count": 112.78518987638684,
+          "ci": {
+            "stimulus": [
+              0.3394376023006439,
+              0.4527029045894689
+            ],
+            "participant": [
+              0.338061289591915,
+              0.4923817844769352
+            ],
+            "crossed": [
+              0.3074537795674707,
+              0.5029793352021136
+            ]
+          },
+          "binary": {
+            "threshold": 3.362953694661458,
+            "rule": "y > full-corpus median, held fixed during resampling",
+            "aggregation": "micro over observed participant-stimulus cells",
+            "stimulus_baseline": 0.7837238758708043,
+            "training_majority_baseline": 0.3742875237492084,
+            "class_balance_reference": 0.5,
+            "stimulus_ci": [
+              0.7538859769332855,
+              0.8101724651509575
+            ],
+            "excess_ci": [
+              0.15951637482683342,
+              0.37339447167747813
+            ]
+          },
+          "majority_strength": {
+            "fixed": 0.8191476902745082,
+            "median": 0.7836120230319344
+          }
+        },
+        "arousal": {
+          "point": 0.2268939745105663,
+          "mean_count": 112.78571428571429,
+          "effective_count": 112.78518987638684,
+          "ci": {
+            "stimulus": [
+              0.10473294447586458,
+              0.3198258351026965
+            ],
+            "participant": [
+              0.18832813968111686,
+              0.2788538948738419
+            ],
+            "crossed": [
+              0.09739579679356744,
+              0.3435837023113294
+            ]
+          },
+          "binary": {
+            "threshold": 3.5729166666666665,
+            "rule": "y > full-corpus median, held fixed during resampling",
+            "aggregation": "micro over observed participant-stimulus cells",
+            "stimulus_baseline": 0.6209626345788474,
+            "training_majority_baseline": 0.3641545281823939,
+            "class_balance_reference": 0.5015832805573148,
+            "stimulus_ci": [
+              0.5566973768288797,
+              0.6803159665640653
+            ],
+            "excess_ci": [
+              0.018353328476530754,
+              0.28463324913205
+            ]
+          },
+          "majority_strength": {
+            "fixed": 0.749063628266291,
+            "median": 0.639368001443921
+          }
+        }
+      },
+      "contrast": {
+        "point": 0.1847116356903652,
+        "frames": {
+          "stimulus": {
+            "ci": [
+              0.04086191382522696,
+              0.3248472513547261
+            ]
+          },
+          "participant": {
+            "ci": [
+              0.11298321418520561,
+              0.251508413227904
+            ]
+          },
+          "crossed": {
+            "ci": [
+              0.027674224332041312,
+              0.34727034372073096
+            ]
+          }
+        }
+      }
+    }
+  },
+  "input_sha256": {
+    "deap_subj32_8d65c6_y.npy": "6e0f505365c86f830ded71a13c1266a812fa9884156c4ec5992202304d17d48b",
+    "mahnob_meta.csv": "8744a914ca49a1080ce20dabdc23e5ecdaf81f59276463280e6395546e526a84",
+    "dens_ratings.csv": "aae1c2cc242b964987a3fbde53296f43af9f6400e84dd6ab960914109f73d31c",
+    "met_ratings.tsv": "7847966b3fd6ad56a87c81bca323cb5da6e2cfad0f9ca6c815c2d9decb5100ee",
+    "faced_ratings_long.csv": "ed9cb66aa6497173b1810f07694e67a5a0d3601a5c5df1b0e4b01c78af75aa9a"
+  },
+  "script_sha256": "8306bca9c0996b9dc12a10f751d10f41ea9c615bef3576dad5590ece6471ffc1"
+}

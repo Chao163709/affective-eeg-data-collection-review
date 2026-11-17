@@ -1,0 +1,117 @@
+{
+  "seed": 20261102,
+  "n_permutations": 2000,
+  "statistic": "unequal-group one-way moment estimate (R2_stim)",
+  "null": "ratings reassigned across stimuli within participant; participant distribution and missing-cell pattern held fixed",
+  "p_rule": "(1 + #{null >= observed}) / (B + 1)",
+  "corpora": {
+    "DEAP": {
+      "valence": {
+        "observed": 0.48438743350788693,
+        "null_q50": 0.0,
+        "null_q95": 0.011766696652153737,
+        "null_q99": 0.0198997288786106,
+        "null_max": 0.02896062103280806,
+        "n_null_ge_observed": 0,
+        "p": 0.0004997501249375312
+      },
+      "arousal": {
+        "observed": 0.1428444607865014,
+        "null_q50": 0.0,
+        "null_q95": 0.008458417165896378,
+        "null_q99": 0.014765523893354662,
+        "null_max": 0.021565686673168626,
+        "n_null_ge_observed": 0,
+        "p": 0.0004997501249375312
+      }
+    },
+    "MAHNOB-HCI": {
+      "valence": {
+        "observed": 0.6317336686991138,
+        "null_q50": 0.0,
+        "null_q95": 0.021686700574628914,
+        "null_q99": 0.032688770322618375,
+        "null_max": 0.05519858239737429,
+        "n_null_ge_observed": 0,
+        "p": 0.0004997501249375312
+      },
+      "arousal": {
+        "observed": 0.3474894496439791,
+        "null_q50": 0.0,
+        "null_q95": 0.0148905308503086,
+        "null_q99": 0.027305302021091795,
+        "null_max": 0.04998712369308971,
+        "n_null_ge_observed": 0,
+        "p": 0.0004997501249375312
+      }
+    },
+    "DENS": {
+      "valence": {
+        "observed": 0.7132502009009176,
+        "null_q50": 0.001033134943177676,
+        "null_q95": 0.03404944016337241,
+        "null_q99": 0.05540343732740861,
+        "null_max": 0.0927077792824577,
+        "n_null_ge_observed": 0,
+        "p": 0.0004997501249375312
+      },
+      "arousal": {
+        "observed": 0.2865380287944216,
+        "null_q50": 0.0,
+        "null_q95": 0.029210236888734184,
+        "null_q99": 0.04333023863599611,
+        "null_max": 0.0709873619780904,
+        "n_null_ge_observed": 0,
+        "p": 0.0004997501249375312
+      }
+    },
+    "MET": {
+      "valence": {
+        "observed": 0.48486628622580286,
+        "null_q50": 0.0,
+        "null_q95": 0.0292325421131041,
+        "null_q99": 0.04176386670263623,
+        "null_max": 0.061564069401261454,
+        "n_null_ge_observed": 0,
+        "p": 0.0004997501249375312
+      },
+      "arousal": {
+        "observed": 0.6658359568798307,
+        "null_q50": 0.0,
+        "null_q95": 0.028122972470460462,
+        "null_q99": 0.045367520706345754,
+        "null_max": 0.06581262924623889,
+        "n_null_ge_observed": 0,
+        "p": 0.0004997501249375312
+      }
+    },
+    "FACED": {
+      "valence": {
+        "observed": 0.4116056102009315,
+        "null_q50": 0.0,
+        "null_q95": 0.003192381267891272,
+        "null_q99": 0.005618101687062159,
+        "null_max": 0.009404523132444503,
+        "n_null_ge_observed": 0,
+        "p": 0.0004997501249375312
+      },
+      "arousal": {
+        "observed": 0.2268939745105663,
+        "null_q50": 0.0,
+        "null_q95": 0.0020023268873809127,
+        "null_q99": 0.0036279939305637154,
+        "null_max": 0.008190499974570822,
+        "n_null_ge_observed": 0,
+        "p": 0.0004997501249375312
+      }
+    }
+  },
+  "input_sha256": {
+    "deap_subj32_8d65c6_y.npy": "6e0f505365c86f830ded71a13c1266a812fa9884156c4ec5992202304d17d48b",
+    "mahnob_meta.csv": "8744a914ca49a1080ce20dabdc23e5ecdaf81f59276463280e6395546e526a84",
+    "dens_ratings.csv": "aae1c2cc242b964987a3fbde53296f43af9f6400e84dd6ab960914109f73d31c",
+    "met_ratings.tsv": "7847966b3fd6ad56a87c81bca323cb5da6e2cfad0f9ca6c815c2d9decb5100ee",
+    "faced_ratings_long.csv": "ed9cb66aa6497173b1810f07694e67a5a0d3601a5c5df1b0e4b01c78af75aa9a"
+  },
+  "script_sha256": "41ac565c349eae3d247620db37d804947de1a9ab8bc471cfcf7564b998b38296"
+}

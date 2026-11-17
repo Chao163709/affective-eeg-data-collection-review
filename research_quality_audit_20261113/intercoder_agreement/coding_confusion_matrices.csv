@@ -1,0 +1,47 @@
+﻿field,A_value,B_value,n,on_diagonal,corpora
+released_target,assigned,assigned,11,1,SEED; SEED-IV; SEED-V; SEED-VII; SEED-GER; SEED-FRA; SEED-MYA; SEED-SD; FACED; MPED; EAV
+released_target,assigned,cannot judge,2,0,IESD; ECSMP
+released_target,mixed,mixed,1,1,K-EmoCon
+released_target,self-report,cannot judge,4,0,DEAP; DREAMER; AMIGOS; EmoEEG-MC
+released_target,self-report,mixed,1,0,MET
+released_target,self-report,self-report,8,1,MAHNOB-HCI; GAMEEMO; DENS; EVA-MED; Voice-UI; Emognition; LLaMAC; Daly deposit
+additional_stream,feedback,feedback,2,1,SEED-V; SEED-VII
+additional_stream,none,cannot judge,20,0,DEAP; MAHNOB-HCI; SEED; SEED-IV; SEED-GER; SEED-FRA; SEED-MYA; SEED-SD; DREAMER; MPED; GAMEEMO; DENS; IESD; EmoEEG-MC; EVA-MED; EAV; Voice-UI; Emognition; LLaMAC; Daly deposit
+additional_stream,none,mixed,1,0,K-EmoCon
+additional_stream,none,ratings,1,0,MET
+additional_stream,observer,cannot judge,1,0,AMIGOS
+additional_stream,ratings,cannot judge,1,0,ECSMP
+additional_stream,ratings,ratings,1,1,FACED
+ratings_per_stimulus,one,cannot judge,10,0,SEED; SEED-IV; SEED-GER; SEED-FRA; SEED-MYA; MPED; IESD; EAV; ECSMP; Daly deposit
+ratings_per_stimulus,one,multiple,13,0,DEAP; MAHNOB-HCI; DREAMER; AMIGOS; FACED; GAMEEMO; DENS; EmoEEG-MC; EVA-MED; Voice-UI; Emognition; LLaMAC; MET
+ratings_per_stimulus,one,one,2,1,SEED-V; SEED-SD
+ratings_per_stimulus,session_level,one,1,0,SEED-VII
+ratings_per_stimulus,time_resolved,cannot judge,1,0,K-EmoCon
+stimulus_unit,clip,clip,15,1,DEAP; MAHNOB-HCI; SEED; SEED-VII; SEED-GER; SEED-FRA; SEED-MYA; SEED-SD; DREAMER; AMIGOS; FACED; DENS; Emognition; ECSMP; LLaMAC
+stimulus_unit,clip,excerpt,1,0,Daly deposit
+stimulus_unit,clip,period,1,0,EVA-MED
+stimulus_unit,clip,trial,1,0,EmoEEG-MC
+stimulus_unit,conversation,period,1,0,K-EmoCon
+stimulus_unit,exchange,exchange,1,1,Voice-UI
+stimulus_unit,game,game,1,1,GAMEEMO
+stimulus_unit,period,period,1,1,IESD
+stimulus_unit,song,song,1,1,MET
+stimulus_unit,trial,clip,3,0,SEED-IV; SEED-V; MPED
+stimulus_unit,trial,exchange,1,0,EAV
+stimuli_shared,TBD,cannot judge,1,0,EVA-MED
+stimuli_shared,TBD,no,1,0,EmoEEG-MC
+stimuli_shared,no,no,2,1,EAV; K-EmoCon
+stimuli_shared,yes,cannot judge,20,0,DEAP; MAHNOB-HCI; SEED; SEED-IV; SEED-V; SEED-VII; SEED-GER; SEED-FRA; SEED-MYA; SEED-SD; DREAMER; AMIGOS; MPED; GAMEEMO; DENS; IESD; Emognition; ECSMP; LLaMAC; Daly deposit
+stimuli_shared,yes,yes,3,1,FACED; Voice-UI; MET
+protocol_records_self_report,not established,not established,2,1,IESD; EAV
+protocol_records_self_report,yes,not established,2,0,SEED-IV; MPED
+protocol_records_self_report,yes,yes,23,1,DEAP; MAHNOB-HCI; SEED; SEED-V; SEED-VII; SEED-GER; SEED-FRA; SEED-MYA; SEED-SD; DREAMER; AMIGOS; FACED; GAMEEMO; DENS; EmoEEG-MC; EVA-MED; Voice-UI; Emognition; K-EmoCon; ECSMP; LLaMAC; Daly deposit; MET
+release_description,,does not mention,1,0,SEED
+release_description,,explicitly describes,4,0,MAHNOB-HCI; FACED; DENS; MET
+release_description,,not inspected,1,0,DEAP
+release_description,explicitly describes,does not mention,1,0,Daly deposit
+release_description,explicitly describes,explicitly describes,4,1,SEED-V; SEED-VII; GAMEEMO; Emognition
+release_description,not inspected,cannot judge,2,0,EAV; ECSMP
+release_description,not inspected,does not mention,8,0,SEED-IV; SEED-GER; SEED-FRA; SEED-MYA; SEED-SD; MPED; IESD; EmoEEG-MC
+release_description,not inspected,explicitly describes,4,0,EVA-MED; Voice-UI; K-EmoCon; LLaMAC
+release_description,not inspected,not inspected,2,1,DREAMER; AMIGOS

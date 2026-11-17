@@ -1,0 +1,20 @@
+{
+  "script": "scripts/consensus_transfer.py",
+  "script_sha256": "4b2522df0ed0b40e780c12f838af2ddc102a5207899562c57a0bbb67038e7f9f",
+  "numpy_version": "2.2.5",
+  "base_seed": 20261104,
+  "replicates": 2000,
+  "seed_rule": "base_seed + crc32(UTF-8 corpus name)",
+  "bootstrap": "paired resampling of fixed participant loss pairs, with replacement",
+  "scope": "descriptive participant variation; predictors not refitted; stimuli fixed",
+  "quantile_method": "linear",
+  "inputs": {
+    "scripts\\verified_analysis.py": "8306bca9c0996b9dc12a10f751d10f41ea9c615bef3576dad5590ece6471ffc1",
+    "results\\rating_input_manifest_20261108.json": "a863ed33e3bc37560c3c6e11bf5333f1238bc84859fd2e03a99a7000f1b9243a",
+    "cache\\deap_subj32_8d65c6_y.npy": "6e0f505365c86f830ded71a13c1266a812fa9884156c4ec5992202304d17d48b",
+    "cache\\mahnob_meta.csv": "8744a914ca49a1080ce20dabdc23e5ecdaf81f59276463280e6395546e526a84",
+    "cache\\dens_ratings.csv": "aae1c2cc242b964987a3fbde53296f43af9f6400e84dd6ab960914109f73d31c",
+    "cache\\met_ratings.tsv": "7847966b3fd6ad56a87c81bca323cb5da6e2cfad0f9ca6c815c2d9decb5100ee",
+    "cache\\faced_ratings_long.csv": "ed9cb66aa6497173b1810f07694e67a5a0d3601a5c5df1b0e4b01c78af75aa9a"
+  }
+}

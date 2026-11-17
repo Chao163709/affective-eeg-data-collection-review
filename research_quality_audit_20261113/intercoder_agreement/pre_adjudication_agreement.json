@@ -1,0 +1,910 @@
+{
+ "codebook_version": "AECS v1.0.0",
+ "computed": "2026-11-13",
+ "state": "pre-adjudication; no coded value was altered",
+ "inputs": [
+  {
+   "coder": "Coder A",
+   "file": "affect_eeg_census.csv",
+   "sha256": "608f2799af9865b2248820a285803c3d29ca7fb793f285bcc9712fda1152189c",
+   "coding_date": "2026-11-04"
+  },
+  {
+   "coder": "Coder A",
+   "file": "FIRST_PASS_FROZEN.csv",
+   "sha256": "b4c4b5332854006d9a57e7b3d5f3456a14a2ed6d4f58641e6596d05104ad3e9e",
+   "coding_date": "2026-11-04"
+  },
+  {
+   "coder": "Coder A",
+   "file": "CROSSWALK.md",
+   "sha256": "5830cfa66456c77ef8853e3b0720b3b3633021093291fbe9e7e3f75abf6294e4",
+   "coding_date": "2026-11-04"
+  },
+  {
+   "coder": "Coder A",
+   "file": "ECSMP_CORRECTION.md",
+   "sha256": "3afb4c9efa7edd0f3cd83650186b53d4c399d0ba4515f4fb9636223f2d43cd1e",
+   "coding_date": "2026-11-04"
+  },
+  {
+   "coder": "both",
+   "file": "coding_schema.json",
+   "sha256": "f63d00401c5fbc64f644ed751c15fae3ba819d10e29fb11a5e14c472eb179b51",
+   "coding_date": "2026-11-04"
+  },
+  {
+   "coder": "both",
+   "file": "codebook.md",
+   "sha256": "c2961aaa4a6096c8a9de2827871c7f6d6e1da0908fdfd6c5e01f4d52da5e6b7d",
+   "coding_date": "2026-11-04"
+  },
+  {
+   "coder": "Coder B",
+   "file": "independent_coding.csv",
+   "sha256": "164797730392b21183e04642e7c2a57d9a4ae1ea38873bdd66e18a837fe65da2",
+   "coding_date": "2026-11-13"
+  },
+  {
+   "coder": "Coder B",
+   "file": "independent_evidence_log.csv",
+   "sha256": "b7438c4f7e13b86c696c3975f62f72da79531252693d4ec4f656bf62c96a8d48",
+   "coding_date": "2026-11-13"
+  },
+  {
+   "coder": "Coder B",
+   "file": "coding_method_log_rechecked.md",
+   "sha256": "82067fc320cc93022122b085d61ce09f4d07e067e6361ba806806ffe6aba4c5a",
+   "coding_date": "2026-11-13"
+  },
+  {
+   "coder": "Coder B",
+   "file": "unresolved_items_rechecked.md",
+   "sha256": "53723d55f46ff86bd813bd7b85dc6b65c0bfe142070aed880642308907860f0a",
+   "coding_date": "2026-11-13"
+  }
+ ],
+ "corpora": 27,
+ "headline_fields": [
+  "released_target",
+  "additional_stream",
+  "ratings_per_stimulus",
+  "stimulus_unit",
+  "stimuli_shared",
+  "protocol_records_self_report",
+  "n_subjects",
+  "n_stimuli"
+ ],
+ "headline": {
+  "released_target": {
+   "type": "enum",
+   "total_comparisons": 27,
+   "agreements": 20,
+   "raw_agreement_rate": 0.7407,
+   "kappa": 0.6062,
+   "pabak_supplementary": 0.4815,
+   "kappa_note": "",
+   "A_distribution": {
+    "self-report": 13,
+    "assigned": 13,
+    "mixed": 1
+   },
+   "B_distribution": {
+    "cannot judge": 6,
+    "self-report": 8,
+    "assigned": 11,
+    "mixed": 2
+   },
+   "sensitivity_both_definite": {
+    "total_comparisons": 27,
+    "excluded": 6,
+    "retained": 21,
+    "agreements": 20,
+    "raw_agreement_rate": 0.9524,
+    "definite_conflicts": 1,
+    "kappa": 0.9146,
+    "pabak_supplementary": 0.9048,
+    "kappa_note": "",
+    "excluded_corpora": [
+     {
+      "corpus": "DEAP",
+      "A": "self-report",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "DREAMER",
+      "A": "self-report",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "AMIGOS",
+      "A": "self-report",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "IESD",
+      "A": "assigned",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "EmoEEG-MC",
+      "A": "self-report",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "ECSMP",
+      "A": "assigned",
+      "B": "cannot judge"
+     }
+    ]
+   }
+  },
+  "additional_stream": {
+   "type": "enum",
+   "total_comparisons": 27,
+   "agreements": 3,
+   "raw_agreement_rate": 0.1111,
+   "kappa": 0.1012,
+   "pabak_supplementary": 0.0,
+   "kappa_note": "",
+   "A_distribution": {
+    "none": 22,
+    "feedback": 2,
+    "observer": 1,
+    "ratings": 2
+   },
+   "B_distribution": {
+    "cannot judge": 22,
+    "feedback": 2,
+    "ratings": 2,
+    "mixed": 1
+   },
+   "sensitivity_both_definite": {
+    "total_comparisons": 27,
+    "excluded": 22,
+    "retained": 5,
+    "agreements": 3,
+    "raw_agreement_rate": 0.6,
+    "definite_conflicts": 2,
+    "kappa": 0.4737,
+    "pabak_supplementary": 0.2,
+    "kappa_note": "",
+    "excluded_corpora": [
+     {
+      "corpus": "DEAP",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "MAHNOB-HCI",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-IV",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-GER",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-FRA",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-MYA",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-SD",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "DREAMER",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "AMIGOS",
+      "A": "observer",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "MPED",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "GAMEEMO",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "DENS",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "IESD",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "EmoEEG-MC",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "EVA-MED",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "EAV",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "Voice-UI",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "Emognition",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "ECSMP",
+      "A": "ratings",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "LLaMAC",
+      "A": "none",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "Daly deposit",
+      "A": "none",
+      "B": "cannot judge"
+     }
+    ]
+   }
+  },
+  "ratings_per_stimulus": {
+   "type": "enum",
+   "total_comparisons": 27,
+   "agreements": 2,
+   "raw_agreement_rate": 0.0741,
+   "kappa": -0.0321,
+   "pabak_supplementary": 0.0,
+   "kappa_note": "",
+   "A_distribution": {
+    "one": 25,
+    "session_level": 1,
+    "time_resolved": 1
+   },
+   "B_distribution": {
+    "multiple": 13,
+    "cannot judge": 11,
+    "one": 3
+   },
+   "sensitivity_both_definite": {
+    "total_comparisons": 27,
+    "excluded": 11,
+    "retained": 16,
+    "agreements": 2,
+    "raw_agreement_rate": 0.125,
+    "definite_conflicts": 14,
+    "kappa": -0.0616,
+    "pabak_supplementary": 0.0,
+    "kappa_note": "",
+    "excluded_corpora": [
+     {
+      "corpus": "SEED",
+      "A": "one",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-IV",
+      "A": "one",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-GER",
+      "A": "one",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-FRA",
+      "A": "one",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-MYA",
+      "A": "one",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "MPED",
+      "A": "one",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "IESD",
+      "A": "one",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "EAV",
+      "A": "one",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "K-EmoCon",
+      "A": "time_resolved",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "ECSMP",
+      "A": "one",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "Daly deposit",
+      "A": "one",
+      "B": "cannot judge"
+     }
+    ]
+   }
+  },
+  "stimulus_unit": {
+   "type": "enum",
+   "total_comparisons": 27,
+   "agreements": 19,
+   "raw_agreement_rate": 0.7037,
+   "kappa": 0.4518,
+   "pabak_supplementary": 0.4074,
+   "kappa_note": "",
+   "A_distribution": {
+    "clip": 18,
+    "trial": 4,
+    "game": 1,
+    "period": 1,
+    "exchange": 1,
+    "conversation": 1,
+    "song": 1
+   },
+   "B_distribution": {
+    "clip": 18,
+    "game": 1,
+    "period": 3,
+    "trial": 1,
+    "exchange": 2,
+    "excerpt": 1,
+    "song": 1
+   },
+   "sensitivity_both_definite": {
+    "total_comparisons": 27,
+    "excluded": 0,
+    "retained": 27,
+    "agreements": 19,
+    "raw_agreement_rate": 0.7037,
+    "definite_conflicts": 8,
+    "kappa": 0.4518,
+    "pabak_supplementary": 0.4074,
+    "kappa_note": "",
+    "excluded_corpora": []
+   }
+  },
+  "stimuli_shared": {
+   "type": "enum",
+   "total_comparisons": 27,
+   "agreements": 5,
+   "raw_agreement_rate": 0.1852,
+   "kappa": 0.0917,
+   "pabak_supplementary": 0.0,
+   "kappa_note": "",
+   "A_distribution": {
+    "yes": 23,
+    "TBD": 2,
+    "no": 2
+   },
+   "B_distribution": {
+    "cannot judge": 21,
+    "yes": 3,
+    "no": 3
+   },
+   "sensitivity_both_definite": {
+    "total_comparisons": 27,
+    "excluded": 22,
+    "retained": 5,
+    "agreements": 5,
+    "raw_agreement_rate": 1.0,
+    "definite_conflicts": 0,
+    "kappa": 1.0,
+    "pabak_supplementary": 1.0,
+    "kappa_note": "",
+    "excluded_corpora": [
+     {
+      "corpus": "DEAP",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "MAHNOB-HCI",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-IV",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-V",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-VII",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-GER",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-FRA",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-MYA",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "SEED-SD",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "DREAMER",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "AMIGOS",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "MPED",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "GAMEEMO",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "DENS",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "IESD",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "EmoEEG-MC",
+      "A": "TBD",
+      "B": "no"
+     },
+     {
+      "corpus": "EVA-MED",
+      "A": "TBD",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "Emognition",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "ECSMP",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "LLaMAC",
+      "A": "yes",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "Daly deposit",
+      "A": "yes",
+      "B": "cannot judge"
+     }
+    ]
+   }
+  },
+  "protocol_records_self_report": {
+   "type": "enum",
+   "total_comparisons": 27,
+   "agreements": 25,
+   "raw_agreement_rate": 0.9259,
+   "kappa": 0.6301,
+   "pabak_supplementary": 0.8519,
+   "kappa_note": "",
+   "A_distribution": {
+    "yes": 25,
+    "not established": 2
+   },
+   "B_distribution": {
+    "yes": 23,
+    "not established": 4
+   },
+   "sensitivity_both_definite": {
+    "total_comparisons": 27,
+    "excluded": 4,
+    "retained": 23,
+    "agreements": 23,
+    "raw_agreement_rate": 1.0,
+    "definite_conflicts": 0,
+    "kappa": null,
+    "pabak_supplementary": 1.0,
+    "kappa_note": "Undefined: expected agreement equals 1 (both coders used a single identical category) so kappa has no denominator; raw agreement is reported instead",
+    "excluded_corpora": [
+     {
+      "corpus": "SEED-IV",
+      "A": "yes",
+      "B": "not established"
+     },
+     {
+      "corpus": "MPED",
+      "A": "yes",
+      "B": "not established"
+     },
+     {
+      "corpus": "IESD",
+      "A": "not established",
+      "B": "not established"
+     },
+     {
+      "corpus": "EAV",
+      "A": "not established",
+      "B": "not established"
+     }
+    ]
+   }
+  },
+  "n_subjects": {
+   "type": "count",
+   "total_comparisons": 27,
+   "both_numeric": 24,
+   "exact_agreements": 24,
+   "exact_agreement_rate": 1.0,
+   "literal_string_agreements": 20,
+   "value_differences": [],
+   "TBD_A": [],
+   "TBD_B": [
+    "MPED",
+    "IESD",
+    "EVA-MED"
+   ],
+   "excluded_from_exact": 3,
+   "kappa": null,
+   "kappa_note": "not applicable to counts"
+  },
+  "n_stimuli": {
+   "type": "count",
+   "total_comparisons": 27,
+   "both_numeric": 19,
+   "exact_agreements": 18,
+   "exact_agreement_rate": 0.9474,
+   "literal_string_agreements": 11,
+   "value_differences": [
+    {
+     "corpus": "SEED-V",
+     "A": 15,
+     "B": 45,
+     "A_raw": "15",
+     "B_raw": "45"
+    }
+   ],
+   "TBD_A": [
+    "EVA-MED"
+   ],
+   "TBD_B": [
+    "SEED-GER",
+    "SEED-SD",
+    "DREAMER",
+    "DENS",
+    "EVA-MED",
+    "EAV",
+    "K-EmoCon",
+    "ECSMP"
+   ],
+   "excluded_from_exact": 8,
+   "kappa": null,
+   "kappa_note": "not applicable to counts"
+  },
+  "_overall": {
+   "fields_in_table": 8,
+   "comparisons": 216,
+   "agreements": 116,
+   "note": "pre-adjudication, 8 fields Coder A coded under AECS"
+  }
+ },
+ "secondary_field": {
+  "release_description": {
+   "type": "enum",
+   "total_comparisons": 21,
+   "agreements": 6,
+   "raw_agreement_rate": 0.2857,
+   "kappa": 0.1463,
+   "pabak_supplementary": 0.0,
+   "kappa_note": "",
+   "A_distribution": {
+    "not inspected": 16,
+    "explicitly describes": 5
+   },
+   "B_distribution": {
+    "does not mention": 9,
+    "explicitly describes": 8,
+    "not inspected": 2,
+    "cannot judge": 2
+   },
+   "sensitivity_both_definite": {
+    "total_comparisons": 21,
+    "excluded": 16,
+    "retained": 5,
+    "agreements": 4,
+    "raw_agreement_rate": 0.8,
+    "definite_conflicts": 1,
+    "kappa": 0.0,
+    "pabak_supplementary": 0.6,
+    "kappa_note": "",
+    "excluded_corpora": [
+     {
+      "corpus": "SEED-IV",
+      "A": "not inspected",
+      "B": "does not mention"
+     },
+     {
+      "corpus": "SEED-GER",
+      "A": "not inspected",
+      "B": "does not mention"
+     },
+     {
+      "corpus": "SEED-FRA",
+      "A": "not inspected",
+      "B": "does not mention"
+     },
+     {
+      "corpus": "SEED-MYA",
+      "A": "not inspected",
+      "B": "does not mention"
+     },
+     {
+      "corpus": "SEED-SD",
+      "A": "not inspected",
+      "B": "does not mention"
+     },
+     {
+      "corpus": "DREAMER",
+      "A": "not inspected",
+      "B": "not inspected"
+     },
+     {
+      "corpus": "AMIGOS",
+      "A": "not inspected",
+      "B": "not inspected"
+     },
+     {
+      "corpus": "MPED",
+      "A": "not inspected",
+      "B": "does not mention"
+     },
+     {
+      "corpus": "IESD",
+      "A": "not inspected",
+      "B": "does not mention"
+     },
+     {
+      "corpus": "EmoEEG-MC",
+      "A": "not inspected",
+      "B": "does not mention"
+     },
+     {
+      "corpus": "EVA-MED",
+      "A": "not inspected",
+      "B": "explicitly describes"
+     },
+     {
+      "corpus": "EAV",
+      "A": "not inspected",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "Voice-UI",
+      "A": "not inspected",
+      "B": "explicitly describes"
+     },
+     {
+      "corpus": "K-EmoCon",
+      "A": "not inspected",
+      "B": "explicitly describes"
+     },
+     {
+      "corpus": "ECSMP",
+      "A": "not inspected",
+      "B": "cannot judge"
+     },
+     {
+      "corpus": "LLaMAC",
+      "A": "not inspected",
+      "B": "explicitly describes"
+     }
+    ]
+   }
+  },
+  "_overall": {
+   "fields_in_table": 1,
+   "comparisons": 21,
+   "agreements": 6,
+   "note": "derived field, reported separately"
+  }
+ },
+ "disagreement_inventory": {
+  "total_cells": 243,
+  "disagreements": 121,
+  "disagreements_excluding_structural": 115,
+  "types": {
+   "A_definite_B_undetermined": 71,
+   "both_definite_conflict": 27,
+   "both_undetermined": 5,
+   "A_undetermined_B_definite": 18
+  },
+  "types_by_field": {
+   "released_target": {
+    "A_definite_B_undetermined": 6,
+    "both_definite_conflict": 1
+   },
+   "additional_stream": {
+    "A_definite_B_undetermined": 22,
+    "both_definite_conflict": 2
+   },
+   "ratings_per_stimulus": {
+    "both_definite_conflict": 14,
+    "A_definite_B_undetermined": 11
+   },
+   "stimulus_unit": {
+    "both_definite_conflict": 8
+   },
+   "stimuli_shared": {
+    "A_definite_B_undetermined": 20,
+    "A_undetermined_B_definite": 1,
+    "both_undetermined": 1
+   },
+   "protocol_records_self_report": {
+    "A_definite_B_undetermined": 2
+   },
+   "release_description": {
+    "both_undetermined": 3,
+    "A_undetermined_B_definite": 17,
+    "both_definite_conflict": 1
+   },
+   "n_subjects": {
+    "A_definite_B_undetermined": 3
+   },
+   "n_stimuli": {
+    "both_definite_conflict": 1,
+    "A_definite_B_undetermined": 7,
+    "both_undetermined": 1
+   }
+  },
+  "structural_unavailable_cells": [
+   {
+    "corpus": "DEAP",
+    "field": "release_description",
+    "A_derivation": "NOT COMPARABLE: package-level status: the rating file was used locally; the release description itself is not recorded"
+   },
+   {
+    "corpus": "MAHNOB-HCI",
+    "field": "release_description",
+    "A_derivation": "NOT COMPARABLE: package-level status: the rating file was used locally; the release description itself is not recorded"
+   },
+   {
+    "corpus": "SEED",
+    "field": "release_description",
+    "A_derivation": "NOT COMPARABLE: package-level status: a package was inspected; the release description wording is not recorded"
+   },
+   {
+    "corpus": "FACED",
+    "field": "release_description",
+    "A_derivation": "NOT COMPARABLE: package-level status: the rating file was used locally; the release description itself is not recorded"
+   },
+   {
+    "corpus": "DENS",
+    "field": "release_description",
+    "A_derivation": "NOT COMPARABLE: package-level status: the rating file was used locally; the release description itself is not recorded"
+   },
+   {
+    "corpus": "MET",
+    "field": "release_description",
+    "A_derivation": "NOT COMPARABLE: package-level status: the rating file was used locally; the release description itself is not recorded"
+   }
+  ],
+  "by_field": {
+   "released_target": 7,
+   "additional_stream": 24,
+   "ratings_per_stimulus": 25,
+   "stimuli_shared": 22,
+   "release_description": 21,
+   "stimulus_unit": 8,
+   "protocol_records_self_report": 2,
+   "n_stimuli": 9,
+   "n_subjects": 3
+  },
+  "by_corpus": {
+   "DEAP": 5,
+   "MAHNOB-HCI": 4,
+   "SEED": 4,
+   "SEED-IV": 6,
+   "SEED-V": 3,
+   "SEED-VII": 2,
+   "SEED-GER": 5,
+   "SEED-FRA": 4,
+   "SEED-MYA": 4,
+   "SEED-SD": 4,
+   "DREAMER": 5,
+   "AMIGOS": 4,
+   "FACED": 2,
+   "MPED": 7,
+   "GAMEEMO": 3,
+   "DENS": 5,
+   "IESD": 6,
+   "EmoEEG-MC": 6,
+   "EVA-MED": 7,
+   "EAV": 5,
+   "Voice-UI": 3,
+   "Emognition": 3,
+   "K-EmoCon": 5,
+   "ECSMP": 6,
+   "LLaMAC": 4,
+   "Daly deposit": 5,
+   "MET": 4
+  }
+ },
+ "rules": {
+  "undetermined_main_analysis": "cannot judge / TBD / not established / not inspected kept as their own categories; never merged",
+  "undetermined_sensitivity": "only pairs where both coders gave a definite value; exclusion counts reported",
+  "counts": "leading integer of the register cell; '+' components summed; TBD excluded from exact agreement",
+  "kappa": "nominal Cohen's kappa; Undefined reported when expected agreement = 1",
+  "pabak": "supplementary prevalence-adjusted index, reported alongside but not instead of kappa"
+ }
+}

@@ -1,0 +1,10 @@
+{
+  "scope": "Frozen derived local rating inputs; identity is separate from provider-source reconstruction",
+  "input_sha256": {
+    "deap_subj32_8d65c6_y.npy": "6e0f505365c86f830ded71a13c1266a812fa9884156c4ec5992202304d17d48b",
+    "mahnob_meta.csv": "8744a914ca49a1080ce20dabdc23e5ecdaf81f59276463280e6395546e526a84",
+    "dens_ratings.csv": "aae1c2cc242b964987a3fbde53296f43af9f6400e84dd6ab960914109f73d31c",
+    "met_ratings.tsv": "7847966b3fd6ad56a87c81bca323cb5da6e2cfad0f9ca6c815c2d9decb5100ee",
+    "faced_ratings_long.csv": "ed9cb66aa6497173b1810f07694e67a5a0d3601a5c5df1b0e4b01c78af75aa9a"
+  }
+}

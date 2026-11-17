@@ -1,0 +1,247 @@
+{
+  "name": "Affect-EEG Corpus Coding Scheme",
+  "short_name": "AECS",
+  "version": "1.0.0",
+  "released": "2026-11-04",
+  "description": "A document-based coding scheme for released affect-EEG corpora. It separates what a corpus is released for from how that label was produced, so that two corpora with the same nominal task can be recognised as supporting different analyses.",
+  "principle": [
+    "Code from documents only. Do not infer a value from general practice.",
+    "Absence of a statement is not a negative finding.",
+    "cannot judge is a valid value and is more informative than a guess."
+  ],
+  "fields": [
+    {
+      "name": "corpus",
+      "label": "Corpus identifier",
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "note": "Short name used in the release or its descriptor."
+    },
+    {
+      "name": "released_target",
+      "label": "Label the corpus is released for",
+      "type": "enum",
+      "required": true,
+      "values": ["assigned", "self-report", "observer", "mixed", "cannot judge"],
+      "definitions": {
+        "assigned": "One category per stimulus unit, identical for every participant, and this is the corpus's main task.",
+        "self-report": "Each participant's own rating is the released target.",
+        "observer": "Labels are scores that external raters gave to participants.",
+        "mixed": "Labels for the same cell come from more than one source with no single main task.",
+        "cannot judge": "The document does not state it."
+      },
+      "note": "Ask what the distributed label file contains, not what was collected during the session."
+    },
+    {
+      "name": "additional_stream",
+      "label": "Second annotation source released alongside the target",
+      "type": "enum",
+      "required": true,
+      "values": ["none", "ratings", "feedback", "observer", "mixed", "cannot judge"],
+      "definitions": {
+        "none": "No second stream is released.",
+        "ratings": "Participant ratings are released on top of an assigned target.",
+        "feedback": "A participant-level score that is not an affect rating, for example an induction-success score.",
+        "observer": "An observer annotation released alongside another target.",
+        "mixed": "Streams of more than one kind appear together.",
+        "cannot judge": "The document does not state it."
+      },
+      "not_a_stream": [
+        "game identity",
+        "an experimental condition fixed by design",
+        "song or clip category",
+        "stimulus metadata such as duration or language"
+      ],
+      "note": "The test is whether a different role labels the same cell."
+    },
+    {
+      "name": "ratings_per_stimulus",
+      "label": "How many ratings one participant gives per stimulus",
+      "type": "enum",
+      "required": true,
+      "values": ["one", "multiple", "time_resolved", "session_level", "cannot judge"],
+      "definitions": {
+        "one": "A single rating per presented stimulus.",
+        "multiple": "Several ratings per stimulus; record the number in notes.",
+        "time_resolved": "An annotation at fixed intervals inside the exposure; record the interval in notes.",
+        "session_level": "One annotation covering a whole session.",
+        "cannot judge": "The document does not state it."
+      },
+      "note": "A post-session summary score is session_level, not time_resolved. Only an in-exposure interval makes a label time resolved.",
+      "aliases": ["rating_granularity", "granularity"]
+    },
+    {
+      "name": "stimulus_unit",
+      "label": "What one rating refers to",
+      "type": "enum",
+      "required": true,
+      "values": ["clip", "trial", "song", "excerpt", "game", "conversation", "period", "exchange", "other", "cannot judge"],
+      "definitions": {
+        "clip": "One video or film clip.",
+        "trial": "One experimental trial, possibly containing several sub-events.",
+        "song": "One music track.",
+        "excerpt": "One excerpt of a longer musical or audiovisual item.",
+        "game": "One game session or game condition.",
+        "conversation": "One dialogue as a whole.",
+        "period": "A defined time block, such as a pre- or post-task period.",
+        "exchange": "One turn or exchange in an interaction.",
+        "other": "None of the above; describe it in notes.",
+        "cannot judge": "The document does not state it."
+      },
+      "note": "When a release describes conditions rather than items, the unit is the condition, and the corpus cannot be pooled with clip-level corpora without a conversion rule."
+    },
+    {
+      "name": "stimuli_shared",
+      "label": "Did all participants see the same stimuli?",
+      "type": "enum",
+      "required": true,
+      "values": ["yes", "no", "cannot judge"],
+      "definitions": {
+        "yes": "The same material was presented to every participant.",
+        "no": "The document states that material differed between participants, for example own dialogues or participant-chosen media.",
+        "cannot judge": "The document is silent."
+      },
+      "note": "Silence is cannot judge, never no."
+    },
+    {
+      "name": "protocol_records_self_report",
+      "label": "Did the protocol collect a participant rating?",
+      "type": "enum",
+      "required": true,
+      "values": ["yes", "no", "not established", "cannot judge"],
+      "definitions": {
+        "yes": "The procedure includes a participant rating.",
+        "no": "The document states that no participant rating was collected.",
+        "not established": "The procedure is described but whether participants rated anything is not stated.",
+        "cannot judge": "The document does not describe the procedure."
+      },
+      "note": "not established requires a description of the procedure. If there is no procedure description at all, use cannot judge."
+    },
+    {
+      "name": "release_description",
+      "label": "Does the release description mention participant-rating files?",
+      "type": "enum",
+      "required": true,
+      "values": ["explicitly describes", "does not mention", "not inspected", "cannot judge"],
+      "definitions": {
+        "explicitly describes": "The release description names or lists participant-rating files.",
+        "does not mention": "The description was read and contains no such mention.",
+        "not inspected": "The description could not be reached.",
+        "cannot judge": "The description was reached but is too vague to decide."
+      },
+      "note": "does not mention never means the file does not exist. It records what the description says, not what the package holds."
+    },
+    {
+      "name": "n_subjects",
+      "label": "Participant count",
+      "type": "int_or_tbd",
+      "required": true,
+      "note": "Record the released or analysed count. If recruited, recorded and analysed counts differ, record the released count and put the others in notes."
+    },
+    {
+      "name": "n_stimuli",
+      "label": "Stimulus count",
+      "type": "int_or_tbd",
+      "required": true,
+      "note": "When the release describes conditions rather than items, record TBD and state the condition structure in notes."
+    },
+    {
+      "name": "notes",
+      "label": "Evidence note",
+      "type": "string",
+      "required": true,
+      "min_length": 10,
+      "note": "Which document was read and which sentence decided the values. This is the only defence of the coding."
+    },
+    {
+      "name": "cannot_judge_fields",
+      "label": "Fields answered with cannot judge",
+      "type": "list",
+      "required": false,
+      "note": "Must list every field whose value is cannot judge, so that the share of undetermined fields can be counted."
+    },
+    {
+      "name": "source_used",
+      "label": "Document actually used",
+      "type": "url_or_doi",
+      "required": true
+    },
+    {
+      "name": "date",
+      "label": "Coding date",
+      "type": "iso_date",
+      "required": true
+    }
+  ],
+  "checks": [
+    {
+      "id": "C1",
+      "level": "error",
+      "if": {"field": "additional_stream", "op": "eq", "value": "ratings"},
+      "then": {"field": "released_target", "op": "in", "values": ["assigned", "mixed"]},
+      "message": "ratings is defined as participant ratings released on top of an assigned target, so released_target must be assigned or mixed."
+    },
+    {
+      "id": "C2",
+      "level": "error",
+      "if": {"field": "ratings_per_stimulus", "op": "eq", "value": "time_resolved"},
+      "then": {"field": "notes", "op": "regex", "value": "\\d+\\s*(s\\b|sec|second)"},
+      "message": "time_resolved requires the interval to be recorded in notes, for example 'every 5 s'."
+    },
+    {
+      "id": "C3",
+      "level": "error",
+      "if": {"field": "ratings_per_stimulus", "op": "eq", "value": "multiple"},
+      "then": {"field": "notes", "op": "regex", "value": "\\d"},
+      "message": "multiple requires the number of ratings per stimulus to be recorded in notes."
+    },
+    {
+      "id": "C4",
+      "level": "warning",
+      "if": {"field": "ratings_per_stimulus", "op": "eq", "value": "session_level"},
+      "then": {"field": "notes", "op": "not_regex", "value": "every\\s*\\d+\\s*(s\\b|sec)"},
+      "message": "notes describes an in-exposure interval while the value is session_level. A post-session summary is not time resolved; check which one the release actually contains."
+    },
+    {
+      "id": "C5",
+      "level": "error",
+      "if": {"field": "stimulus_unit", "op": "eq", "value": "other"},
+      "then": {"field": "notes", "op": "min_length", "value": 40},
+      "message": "stimulus_unit other requires a description of the unit in notes."
+    },
+    {
+      "id": "C6",
+      "level": "error",
+      "if": {"field": "release_description", "op": "eq", "value": "does not mention"},
+      "then": {"field": "notes", "op": "not_regex", "value": "(does not exist|no such file|no ratings? (were|was) released|withheld)"},
+      "message": "does not mention records what the description says. It cannot support a statement that a file does not exist or was withheld."
+    },
+    {
+      "id": "C7",
+      "level": "error",
+      "if": {"field": "stimuli_shared", "op": "eq", "value": "TBD"},
+      "then": {"field": "stimuli_shared", "op": "eq", "value": "cannot judge"},
+      "message": "TBD is reserved for counts. Use cannot judge for categorical fields."
+    },
+    {
+      "id": "C8",
+      "level": "warning",
+      "if": {"field": "protocol_records_self_report", "op": "eq", "value": "no"},
+      "then": {"field": "notes", "op": "regex", "value": "(no (participant )?rating|did not rate|without (any )?rating)"},
+      "message": "no requires a statement in the document that no rating was collected. If the procedure is only described, use not established."
+    },
+    {
+      "id": "C9",
+      "level": "warning",
+      "if": {"field": "released_target", "op": "eq", "value": "mixed"},
+      "then": {"field": "notes", "op": "min_length", "value": 40},
+      "message": "mixed needs a note naming the sources that coexist for the same cell."
+    }
+  ],
+  "reporting": {
+    "count_of_undetermined": "Report the number of fields answered cannot judge, per field and overall.",
+    "no_inference_rule": "A TBD or cannot judge cell is reported as unreported, never filled by inference from other corpora.",
+    "unit_warning": "Corpora whose stimulus_unit is a condition rather than an item cannot be pooled with item-level corpora without a stated conversion rule."
+  }
+}

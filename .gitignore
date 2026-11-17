@@ -1,0 +1,11 @@
+cache/
+.env
+*.pem
+*.key
+__pycache__/
+.venv/
+*.npy
+*.npz
+*.edf
+*.bdf
+*.mat

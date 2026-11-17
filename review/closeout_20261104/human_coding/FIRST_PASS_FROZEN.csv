@@ -1,0 +1,28 @@
+﻿n,corpus,released_target,additional_stream,ratings_per_stimulus,stimulus_unit,stimuli_shared,protocol_records_self_report,n_subjects,n_stimuli,census_granularity_raw,census_self_report_raw,census_release_desc_raw,census_verification
+1,DEAP,self-report,none,one,clip,yes,yes,32,40,one per clip,yes,derived local input analyzed; see input provenance,verified_computed
+2,MAHNOB-HCI,self-report,none,one,clip,yes,yes,27,20,one per clip,yes,derived local input analyzed; see input provenance,verified_computed
+3,SEED,assigned,none,one,clip,yes,yes,15,15,one per clip,documented in recorded protocol,one local package inspected; no participant-rating table found,verified_by_design
+4,SEED-IV,assigned,none,one,trial,yes,yes,15,72 used (24x3; pool 168),one category per trial,yes,not independently verified,verified_doc
+5,SEED-V,assigned,feedback,one,trial,yes,yes,16,15,one category per trial,documented in recorded protocol,official documentation describes participant feedback; no package inspection,verified_doc
+6,SEED-VII,assigned,feedback,session_level,clip,yes,yes,20,80 (12 per emotion x6 + 8 neutral),0-1 induction-effect feedback; retrospective session annotation documented,documented in recorded protocol,official documentation describes participant feedback; no package inspection,verified_doc
+7,SEED-GER,assigned,none,one,clip,yes,yes,TBD,20,clip category released; per-clip self-assessment also collected,documented in recorded protocol,not independently verified,verified_doc
+8,SEED-FRA,assigned,none,one,clip,yes,yes,8,21,clip category released; per-clip self-assessment also collected,documented in recorded protocol,not independently verified,verified_doc
+9,SEED-MYA,assigned,none,one,clip,yes,yes,20,45 (15 pos / 15 neg / 15 neu),clip category released; per-clip self-assessment also collected,documented in recorded protocol,not independently verified,verified_doc
+10,SEED-SD,assigned,none,one,clip,yes,yes,TBD,24 (6 per category x4),clip category released; 1-5 intensity rating collected,documented in recorded protocol,not independently verified,verified_doc
+11,DREAMER,self-report,none,one,clip,yes,yes,23,18,one per clip (1-5),yes,not independently verified,verified_abstract
+12,AMIGOS,self-report,observer,one,clip,yes,yes,40,20,post-video self-report + 20-second observer segments,yes,not independently verified,verified_doc
+13,FACED,assigned,ratings,one,clip,yes,yes,123,28,one per clip (continuous + discrete survey),yes,derived local input analyzed; see input provenance,verified_computed
+14,MPED,assigned,none,one,trial,yes,yes,23,28,one category per trial,documented in recorded protocol,not independently verified,verified_doc
+15,GAMEEMO,self-report,none,one,game,yes,yes,28,4 games,one SAM arousal/valence rating per game,yes,version-3 release description explicitly describes per-subject SAM PDFs; archive not inspected,verified_doc
+16,DENS,self-report,none,one,clip,yes,yes,40 reported (34 analyzed),20 analyzed,367 matched participant–stimulus valence/arousal cells,yes,derived local input analyzed; see input provenance,verified_computed
+17,IESD,assigned,none,one,period,yes,not established,31,15 imagery periods,one instructed target emotion per period,not established in checked record,not independently verified,verified_doc
+18,EmoEEG-MC,self-report,none,one,clip,TBD,yes,60,TBD,one per clip (6 emotion intensities + A/V/familiarity/liking 0-7),yes,not independently verified,verified_doc
+19,EVA-MED,self-report,none,one,clip,TBD,yes,64,TBD,per_clip,yes,not independently verified,verified_doc
+20,EAV,assigned,none,one,trial,no,not established,42,200 listening/speaking trials,per trial; emotion-by-task label,not established,not independently verified,verified_doc
+21,Voice-UI,self-report,none,one,exchange,yes,yes,44 (38 in the benchmark),80 exchanges,per exchange; nine bipolar adjective ratings,yes,not independently verified,verified_doc
+22,Emognition,self-report,none,one,clip,yes,yes,43,10,one per clip,yes,descriptor Data Records describes self-report JSON records; package not inspected,verified_doc
+23,K-EmoCon,mixed,none,time_resolved,conversation,no,yes,32 (16 paired sessions),16 conversations,every 5 s (self + partner + external),yes,not independently verified,verified_doc
+24,ECSMP,self-report,none,one,clip,TBD,yes,89 (87 with valid EEG),6,per_clip,yes,not independently verified,verified_doc
+25,LLaMAC,self-report,none,one,clip,yes,yes,108,50,one per clip (continuous + discrete),yes,not independently verified,verified_doc
+26,Daly deposit,self-report,none,one,clip,yes,yes,31,40 music excerpts,ratings on 8 induced-emotion dimensions,yes,descriptor and ds002721 README describe per-participant induced-emotion reports; archive not inspected,verified_doc
+27,MET,self-report,none,one,song,yes,yes,20,20,one per song (1-9),yes,derived local input analyzed; see input provenance,verified_computed
